@@ -1,0 +1,164 @@
+
+@font-face{
+    font-family: "Special Gothic";
+    src: url("../fuentes/SpecialGothicExpandedOne-Regular.ttf");
+}
+@font-face {
+  font-family: 'SF Pro';
+  src: url('../fuentes/SF-Pro-Display-Regular.otf') format('woff2');
+  font-weight: 400; /* Peso normal */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Negrita';
+  src: url('../fuentes/sf-pro-display-bold.woff2') format('woff2');
+  font-weight: 700; /* Peso negrita */
+  font-style: normal;
+}
+
+h1{
+    color: #1B0037;
+    font-family: "Special Gothic";
+    font-size: 40px;
+    font-weight: 650;
+}
+
+.boton-volver {
+    margin-top: 20px;
+    
+}
+.boton-volver a {
+    color: black;
+    font-family: 'SF Pro';
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.boton-volver a:hover{
+    color: #7B00FF
+}
+
+.boton-volver img{
+     width: 15px;
+     margin-right: 7px;
+
+}
+
+.encabezado img{
+    width:200px;
+}
+
+.encabezado{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+ 
+}
+
+.encabezado p{
+    font-family: 'SF Pro';
+    font-size: medium;
+    margin-top: -15px;
+}
+
+.tarjeta{
+    background-color:#DEC8FE;
+    width: 500px;
+    height: 350px;
+    display:flex;
+    flex-direction: column;
+     margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+}
+
+.tarjeta h3 {
+font-family: 'SF Pro Negrita';
+font-weight: 400;
+text-align: center;
+margin-top: 40px;
+}
+
+.dato-taller-fecha {
+    font-family: 'SF Pro';
+    color: #1C191F;
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    gap: 10px;
+}
+
+
+
+.dato-taller-fecha img{
+    width: 20px;
+}
+
+.dato-taller-hora img{
+    width: 22px;
+    margin-left: 15px;
+    margin-right: -6px;
+}
+
+.dato-taller-hora{
+    font-family: 'SF Pro';
+    color: #1C191F;
+    display: flex;
+    align-items: center;
+    margin-left: 22px;
+    gap: 15px;
+    
+}
+
+
+
+.dato-taller-ubicacion img{
+    width: 35px;
+    margin-left: 10px;
+
+}
+
+.dato-taller-ubicacion{
+     font-family: 'SF Pro';
+    color: #1C191F;
+    display: flex;
+    align-items: center;
+    margin-left: 21px;
+}
+
+.datos {
+    font-family: 'SF Pro';
+    color: #1C191F;
+    margin-left: 28px;
+}
+
+
+
+
+
+@media (max-width: 768px){
+
+    .encabezado img{
+        width: 120px;
+    }
+
+    h1{
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .tarjeta{
+        width: 85%;
+        height: auto;
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .datos{
+        margin-top: 20px;
+    }
+}
+
