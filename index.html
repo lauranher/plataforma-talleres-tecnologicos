@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pantalla principal web IES Laureles</title>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+
+    <body>
+
+        <!-- PARTE IZQUIERDA (SIDEBAR) -->
+        <div class="parteIzquierda">
+
+            <!-- LOGO + TÍTULO -->
+            <div class="logoTitulo">
+                <img src="img/logo.png" alt="Logo IES Laureles" width="60">
+                <h3>IES Laureles</h3>
+            </div>
+
+            <!-- BLOQUE TELÉFONO -->
+            <article id="telefono">
+                <img src="img/elemento_telefono.png" alt="Icono teléfono" width="14">
+                <p>Inscripción y soporte: <br> <strong>+34 612 345 678</strong></p>
+            </article>
+
+            <!-- FILTROS HORARIO -->
+            <h4>FILTRAR POR HORARIO</h4>
+            <div class="filtros">
+                <input type="checkbox" id="mañana"><label for="mañana">Turno mañana</label><br>
+                <input type="checkbox" id="tarde"><label for="tarde">Turno tarde</label><br>
+                <input type="checkbox" id="findes"><label for="findes">Intensivos Fines de Semana</label><br>
+                <input type="checkbox" id="noche"><label for="noche">Turno noche</label><br>
+            </div>
+
+            <!-- FILTROS TEMÁTICA -->
+            <h4>FILTRAR POR TEMÁTICA</h4>
+            <div class="filtros">
+                <input type="checkbox" id="frontend"><label for="frontend">Desarrollo Frontend</label><br>
+                <input type="checkbox" id="ia"><label for="ia">Inteligencia Artificial</label><br>
+                <input type="checkbox" id="uxui"><label for="uxui">Diseño UX/UI & Prototipado</label><br>
+                <input type="checkbox" id="ciber"><label for="ciber">Ciberseguridad</label><br>
+                <input type="checkbox" id="cloud"><label for="cloud">Cloud Computing</label><br>
+            </div>
+
+            <!-- BOTÓN LIMPIAR -->
+            <a href="#limpiar-checkboxes" class="boton-limpiar">🗑️ Limpiar filtros</a>
+
+        </div>
+
+
+        <!-- PARTE DERECHA -->
+        <div class="parteDerecha">
+            <p id="titulo">Inicio > <b>Talleres disponibles</b></p>
+            <h1>Talleres tecnológicos disponibles</h1>
+
+            <!-- BUSCADOR -->
+            <form class="buscador">
+                <label for="buscador" style="display:none;">Buscar talleres</label>
+                <input id="buscador" type="search" placeholder="🔍 Buscar talleres por tecnología, herramientas, nivel..." size="50">
+            </form>
+
+            <!-- TARJETAS -->
+            <div class="contenedorTalleres">
+
+                <article class="taller">
+                    <img src="img/desarrollo_web_moderno.png" alt="React y Next.js">
+                    <span class="nivelIntermedio">INTERMEDIO</span>
+                    <h3>Desarrollo Web Moderno con React y Next.js</h3>
+                    <p>Aprende a construir aplicaciones escalables utilizando Server Components, enrutamiento dinámico y optimización de rendimiento.</p>
+                    <a href="taller_desarrollo.html">
+                        <button>Ver detalles del taller →</button>
+                    </a>
+                </article>
+
+                <article class="taller">
+                    <img src="img/fundamentos_de_machine.jpg" alt="Machine Learning">
+                    <span class="nivelIntermedio">INTERMEDIO</span>
+                    <h3>Fundamentos de Machine Learning en Python</h3>
+                    <p>Construye tus primeros modelos de regresión y clasificación usando Scikit-Learn, TensorFlow y Keras, y aprende a evaluar su desempeño con métricas clave.</p>
+                    <a href="taller_fundamentos.html">
+                        <button>Ver detalles del taller →</button>
+                    </a>
+                </article>
+
+                <article class="taller">
+                    <img src="img/sistemas_de_diseño.png" alt="Figma">
+                    <span class="nivelAvanzado">AVANZADO</span>
+                    <h3>Sistemas de Diseño UX/UI en Figma</h3>
+                    <p>Organiza bibliotecas de componentes, variables semánticas, estados y auto-layout avanzado para crear experiencias de usuario consistentes y escalables.</p>
+                    <a href="taller_sistemas.html">
+                        <button>Ver detalles del taller →</button>
+                    </a>
+                </article>
+
+                <article class="taller">
+                    <img src="img/ciberseguridad.jpg" alt="Ciberseguridad">
+                    <span class="nivelIntermedio">INTERMEDIO</span>
+                    <h3>Ciberseguridad y Hacking Ético</h3>
+                    <p>Técnicas esenciales de pentesting, detección de vulnerabilidades OWASP y protección contra ataques de ingeniería social.</p>
+                    <a href="taller_ciberseguridad.html">
+                        <button>Ver detalles del taller →</button>
+                    </a>
+                </article>
+
+                <article class="taller">
+                    <img src="img/despliegue.jpg" alt="AWS">
+                    <span class="nivelIntermedio">INTERMEDIO</span>
+                    <h3>Despliegue y Arquitectura Cloud en AWS</h3>
+                    <p>Aprende EC2, S3, Lambdas y gestión eficiente de bases de datos en la nube para optimizar rendimiento y escalabilidad.</p>
+                    <a href="taller_despliegue.html">
+                        <button>Ver detalles del taller →</button>
+                    </a>
+                </article>
+
+                <article class="taller">
+                    <img src="img/iniciacion_al_IoT.jpg" alt="IoT">
+                    <span class="nivelPrincipante">PRINCIPANTE</span>
+                    <h3>Iniciación al IoT con Arduino y Raspberry Pi</h3>
+                    <p>Conexión de sensores, captura de variables ambientales y envío de telemetría a servidores locales o en la nube.</p>
+                    <a href="taller_iniciación.html">
+                        <button>Ver detalles del taller →</button>
+                    </a>
+                </article>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>
